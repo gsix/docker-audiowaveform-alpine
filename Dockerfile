@@ -11,4 +11,7 @@ RUN apk add --no-cache git make cmake gcc g++ libmad-dev \
     && mkdir build \
     && cd build \
     && cmake .. \
-    && make
+    && make \
+    && cp audiowaveform* /bin \
+    && cd \
+    && rm -rf /audiowaveform
