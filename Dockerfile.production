@@ -1,4 +1,4 @@
-FROM ichai/audiowaveform-alpine-builder:latest as audiowaveform-builder
+FROM genesix/docker-audiowaveform-alpine:latest as audiowaveform-builder
 
 FROM alpine:3.9
 
