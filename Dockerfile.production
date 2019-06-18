@@ -1,0 +1,7 @@
+FROM ichai/audiowaveform-alpine-builder:latest as audiowaveform-builder
+
+FROM alpine:3.9
+
+RUN apk add --no-cache libmad libsndfile libid3tag gd boost boost-program_options
+
+COPY --from=audiowaveform-builder /bin/audiowaveform /usr/local/bin
