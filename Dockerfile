@@ -10,7 +10,7 @@ RUN apk add --no-cache git make cmake gcc g++ libmad-dev \
     && ln -s googletest-release-1.8.0/googlemock googlemock \              
     && mkdir build \
     && cd build \
-    && cmake .. \
+    && cmake -D BUILD_STATIC=1 .. \
     && make \
     && cp audiowaveform* /bin \
     && cd \
