@@ -2,7 +2,7 @@
 Build side docker container to use in multistage builds for reducing total container size
 
 * [Source repo bbc/audiowaveform](https://github.com/bbc/audiowaveform)
-* [This repo](https://github.com/genesix/docker-audiowaveform-alpine) is alpine Dockerfile with **audiowaveform** building in it
+* [This repo](https://github.com/gsix/docker-audiowaveform-alpine) is alpine Dockerfile with **audiowaveform** building in it
 * [Docker Hub Container](https://hub.docker.com/r/genesix/docker-audiowaveform-alpine) with builded **audiowaveform** binaries. (**audiowaveform** and **audiowaveform_test** are in /bin directory)
 
 ## Usage in multistage builds
